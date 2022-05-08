@@ -219,42 +219,42 @@ const tick = () =>
     sphere.rotation.x += .05 * (targetY - sphere.rotation.x)
     sphere.position.z += -.05 * (targetY - sphere.rotation.x)
             
-    sphereEarth.rotation.z = 1.2 * elapsedTime
+    sphereEarth.rotation.z = 1 * elapsedTime
     sphereEarth.rotation.y += .05 * (targetX - sphereEarth.rotation.y)
     sphereEarth.rotation.x += .05 * (targetY - sphereEarth.rotation.x)
     sphereEarth.position.z += -.05 * (targetY - sphereEarth.rotation.x)
             
-    sphereMercury.rotation.z = 1.2 * elapsedTime
+    sphereMercury.rotation.z = 1 * elapsedTime
     sphereMercury.rotation.y += .05 * (targetX - sphereEarth.rotation.y)
     sphereMercury.rotation.x += .05 * (targetY - sphereEarth.rotation.x)
     sphereMercury.position.z += -.05 * (targetY - sphereEarth.rotation.x)
             
-    sphereVenus.rotation.z = 1.2 * elapsedTime
+    sphereVenus.rotation.z = 1 * elapsedTime
     sphereVenus.rotation.y += .05 * (targetX - sphereEarth.rotation.y)
     sphereVenus.rotation.x += .05 * (targetY - sphereEarth.rotation.x)
     sphereVenus.position.z += -.05 * (targetY - sphereEarth.rotation.x)
             
-    sphereMars.rotation.z = 1.2 * elapsedTime
+    sphereMars.rotation.z = 1 * elapsedTime
     sphereMars.rotation.y += .05 * (targetX - sphereEarth.rotation.y)
     sphereMars.rotation.x += .05 * (targetY - sphereEarth.rotation.x)
     sphereMars.position.z += -.05 * (targetY - sphereEarth.rotation.x)
             
-    sphereJupiter.rotation.z = 1.2 * elapsedTime
+    sphereJupiter.rotation.z = 1 * elapsedTime
     sphereJupiter.rotation.y += .05 * (targetX - sphereEarth.rotation.y)
     sphereJupiter.rotation.x += .05 * (targetY - sphereEarth.rotation.x)
     sphereJupiter.position.z += -.05 * (targetY - sphereEarth.rotation.x)
  
-    sphereSaturn.rotation.z = 1.2 * elapsedTime
+    sphereSaturn.rotation.z = 1 * elapsedTime
     sphereSaturn.rotation.y += .05 * (targetX - sphereEarth.rotation.y)
     sphereSaturn.rotation.x += .05 * (targetY - sphereEarth.rotation.x)
     sphereSaturn.position.z += -.05 * (targetY - sphereEarth.rotation.x)
             
-    sphereUranus.rotation.z = 1.2 * elapsedTime
+    sphereUranus.rotation.z = 1 * elapsedTime
     sphereUranus.rotation.y += .05 * (targetX - sphereEarth.rotation.y)
     sphereUranus.rotation.x += .05 * (targetY - sphereEarth.rotation.x)
     sphereUranus.position.z += -.05 * (targetY - sphereEarth.rotation.x)
             
-    sphereNeptune.rotation.z = 1.2 * elapsedTime
+    sphereNeptune.rotation.z = 1 * elapsedTime
     sphereNeptune.rotation.y += .05 * (targetX - sphereEarth.rotation.y)
     sphereNeptune.rotation.x += .05 * (targetY - sphereEarth.rotation.x)
     sphereNeptune.position.z += -.05 * (targetY - sphereEarth.rotation.x)
