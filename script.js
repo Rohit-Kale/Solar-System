@@ -2,7 +2,7 @@
 
 const textureLoader = new THREE.TextureLoader()
 
-const normalTextureOfEarth = textureLoader.load('./earth.jpeg')
+const normalTextureOfEarth = textureLoader.load('./earthmap.jpeg')
 const normalTextureOfSUN = textureLoader.load('./sun.jpg')
 const normalTextureOfJupiter = textureLoader.load('./jupiter.jpg')
 const normalTextureOfSaturn = textureLoader.load('./saturn.jpg')
@@ -31,27 +31,27 @@ const Saturnringgeometry = new THREE.RingBufferGeometry(.5, .7, 60)
 
 // Materials
 
-const materialofEarth = new THREE.MeshStandardMaterial()
-materialofEarth.roughness = 0.3
-materialofEarth.opacity = 0.9
-materialofEarth.map = normalTextureOfEarth;
+const Earthmaterial = new THREE.MeshStandardMaterial()
+Earthmaterial.roughness = 0.3
+Earthmaterial.opacity = 0.9
+Earthmaterial.map = normalTextureOfEarth;
 
-const sphereEarth = new THREE.Mesh(Earthgeometry,materialofEarth)
+const sphereEarth = new THREE.Mesh(Earthgeometry,Earthmaterial)
 
-const materialofSun = new THREE.MeshStandardMaterial()
-materialofSun.transparent = true
-materialofSun.opacity = 0.9
-materialofSun.metalness = 0
-materialofSun.roughness = 0.3
-materialofSun.map = normalTextureOfSUN;
+const Sunmaterial = new THREE.MeshStandardMaterial()
+Sunmaterial.transparent = true
+Sunmaterial.opacity = 0.9
+Sunmaterial.metalness = 0
+Sunmaterial.roughness = 0.3
+Sunmaterial.map = normalTextureOfSUN;
 
-materialofSun.color = new THREE.Color( 0xfff917 )
+Sunmaterial.color = new THREE.Color( 0xfff917 )
 
-const materialofMercury = new THREE.MeshStandardMaterial()
-materialofMercury.roughness = 0.3
-materialofMercury.opacity = 0.9
-materialofMercury.map = normalTextureOfMercury
-const sphereMercury = new THREE.Mesh(Mercurygeometry,materialofMercury)
+const Mercurymaterial = new THREE.MeshStandardMaterial()
+Mercurymaterial.roughness = 0.3
+Mercurymaterial.opacity = 0.9
+Mercurymaterial.map = normalTextureOfMercury
+const sphereMercury = new THREE.Mesh(Mercurygeometry,Mercurymaterial)
 
 const Venusmaterial = new THREE.MeshStandardMaterial()
 Venusmaterial.roughness = 0.3
@@ -84,16 +84,16 @@ Neptunematerial.map = normalTextureOfNeptune
 const sphereNeptune = new THREE.Mesh(Neptunegeometry,Neptunematerial)
 
 
-const MaterialofSaturn = new THREE.MeshStandardMaterial()
-MaterialofSaturnMaterialofSaturnMaterialofSaturn.opacity = 0.9
-MaterialofSaturnMaterialofSaturn.roughness = 0.3
-MaterialofSaturn.map = normalTextureOfSaturn
-const sphereSaturn = new THREE.Mesh(Saturngeometry,MaterialofSaturn)
+const SatrunMaterial = new THREE.MeshStandardMaterial()
+SatrunMaterial.opacity = 0.9
+SatrunMaterial.roughness = 0.3
+SatrunMaterial.map = normalTextureOfSaturn
+const sphereSaturn = new THREE.Mesh(Saturngeometry,SatrunMaterial)
 
 
-const MaterialofSaturnring = new THREE.MeshBasicMaterial()
-MaterialofSaturnring.map = normalTextureOfSaturnring
-const sphereSaturnring = new THREE.Mesh(Saturnringgeometry,MaterialofSaturnring)
+const SaturnringMaterial = new THREE.MeshBasicMaterial()
+SaturnringMaterial.map = normalTextureOfSaturnring
+const sphereSaturnring = new THREE.Mesh(Saturnringgeometry,SaturnringMaterial)
 
 
 // Mesh
