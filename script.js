@@ -3,7 +3,7 @@
 const textureLoader = new THREE.TextureLoader()
 
 const normalTextureOfEarth = textureLoader.load('./earthmap.jpeg')
-const normalTextureOfSUN = textureLoader.load('./sun.jpg')
+const normalTextureOfSUN = textureLoader.load('./Sun.jpg')
 const normalTextureOfJupiter = textureLoader.load('./jupiter.jpg')
 const normalTextureOfSaturn = textureLoader.load('./saturn.jpg')
 const normalTextureOfMercury = textureLoader.load('./mercury.jpg')
