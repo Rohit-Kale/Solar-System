@@ -77,7 +77,6 @@ const SaturnringMaterial = new THREE.MeshBasicMaterial()
 SaturnringMaterial.map = normalTextureOfSaturnring
 const sphereSaturnring = new THREE.Mesh(Saturnringgeometry,SaturnringMaterial)
 
-
 const Marsmaterial = new THREE.MeshStandardMaterial()
 Marsmaterial.roughness = 0.3
 Marsmaterial.opacity = 0.9
@@ -289,7 +288,6 @@ const tick = () =>
     
     // Update Orbital Controls
     // controls.update()
-
     // Render
     renderer.render(scene, camera)
 
