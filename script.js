@@ -1,4 +1,3 @@
-
 const textureLoader = new THREE.TextureLoader()
 
 const normalTextureOfSUN = textureLoader.load('./Sun.jpg')
@@ -121,8 +120,6 @@ scene.add(pointLight)
 const ambientLight = new THREE.AmbientLight(0xffffff, 1)
 scene.add(ambientLight)
 
-
-
 const sizes = {
     width: window.innerWidth,
     height: window.innerHeight
@@ -201,14 +198,12 @@ const updateSphere = (event) => {
 
 window.addEventListener('scroll', updateSphere);
 
-
 const clock = new THREE.Clock()
 
 const tick = () =>
 {
     targetX = mouseX * .001
     targetY = mouseY * .001
-
 
     const elapsedTime = clock.getElapsedTime()
 
@@ -259,46 +254,38 @@ const tick = () =>
     sphereNeptune.rotation.x += .05 * (targetY - sphereEarth.rotation.x)
     sphereNeptune.position.z += -.05 * (targetY - sphereEarth.rotation.x)
 
-    const rotationMercury = Date.now() * 0.0010;
-   
-    sphereMercury.position.x = 2 * Math.cos(rotationMercury)
-    sphereMercury.position.y = 1 * Math.sin(rotationMercury)
+    const rotationOfMercury = Date.now() * 0.0010;
+    sphereMercury.position.x = 2 * Math.cos(rotationOfMercury)
+    sphereMercury.position.y = 1 * Math.sin(rotationOfMercury)
 
-    const rotationVenus = Date.now() * 0.0009;
-   
-    sphereVenus.position.x = 3 * Math.cos(rotationVenus)
-    sphereVenus.position.y = 1.5 * Math.sin(rotationVenus)
+    const rotationOfVenus = Date.now() * 0.0009;
+    sphereVenus.position.x = 3 * Math.cos(rotationOfVenus)
+    sphereVenus.position.y = 1.5 * Math.sin(rotationOfVenus)
             
    
-    const rotationEarth = Date.now() * 0.0008;
+    const rotationOfEarth = Date.now() * 0.0008;
+    sphereEarth.position.x = 4.5 * Math.cos(rotationOfEarth)
+    sphereEarth.position.y = 2 * Math.sin(rotationOfEarth)
 
-    sphereEarth.position.x = 4.5 * Math.cos(rotationEarth)
-    sphereEarth.position.y = 2 * Math.sin(rotationEarth)
+    const rotationOfMars = Date.now() * 0.0007;
+    sphereMars.position.x = 5.5 * Math.cos(rotationOfMars)
+    sphereMars.position.y = 3.1 * Math.sin(rotationOfMars)
 
-    const rotationMars = Date.now() * 0.0007;
-    
-    sphereMars.position.x = 5.5 * Math.cos(rotationMars)
-    sphereMars.position.y = 3.1 * Math.sin(rotationMars)
+    const rotationOfJupiter = Date.now() * 0.0006;
+    sphereJupiter.position.x = 6.5 * Math.cos(rotationOfJupiter)
+    sphereJupiter.position.y = 3.8 * Math.sin(rotationOfJupiter)
 
-    const rotationJupiter = Date.now() * 0.0006;
-    
-    sphereJupiter.position.x = 6.5 * Math.cos(rotationJupiter)
-    sphereJupiter.position.y = 3.8 * Math.sin(rotationJupiter)
+    const rotationOfSaturn = Date.now() * 0.0005;
+    sphereSaturn.position.x = 7.5 * Math.cos(rotationOfSaturn)
+    sphereSaturn.position.y = 5 * Math.sin(rotationOfSaturn)
 
-    const rotationSaturn = Date.now() * 0.0005;
-   
-    sphereSaturn.position.x = 7.5 * Math.cos(rotationSaturn)
-    sphereSaturn.position.y = 5 * Math.sin(rotationSaturn)
+    const rotationOfUranus = Date.now() * 0.0004;
+    sphereUranus.position.x = 8.5 * Math.cos(rotationOfUranus)
+    sphereUranus.position.y = 5.5 * Math.sin(rotationOfUranus)
 
-    const rotationUranus = Date.now() * 0.0004;
-  
-    sphereUranus.position.x = 8.5 * Math.cos(rotationUranus)
-    sphereUranus.position.y = 5.5 * Math.sin(rotationUranus)
-
-    const rotationNeptune = Date.now() * 0.0003;
-    
-    sphereNeptune.position.x = 9.2 * Math.cos(rotationNeptune)
-    sphereNeptune.position.y = 6.2 * Math.sin(rotationNeptune)
+    const rotationOfNeptune = Date.now() * 0.0003;
+    sphereNeptune.position.x = 9.2 * Math.cos(rotationOfNeptune)
+    sphereNeptune.position.y = 6.2 * Math.sin(rotationOfNeptune)
     
     // Update Orbital Controls
     // controls.update()
@@ -309,5 +296,4 @@ const tick = () =>
     // Call tick again on the next frame
     window.requestAnimationFrame(tick)
 }
-
 tick()
