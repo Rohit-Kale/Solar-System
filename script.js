@@ -1,17 +1,16 @@
 
-
 const textureLoader = new THREE.TextureLoader()
 
-const normalTextureOfEarth = textureLoader.load('./earthmap.jpeg')
 const normalTextureOfSUN = textureLoader.load('./Sun.jpg')
+const normalTextureOfEarth = textureLoader.load('./earthmap.jpeg')
 const normalTextureOfJupiter = textureLoader.load('./jupiter.jpg')
 const normalTextureOfSaturn = textureLoader.load('./saturn.jpg')
 const normalTextureOfMercury = textureLoader.load('./mercury.jpg')
-const normalTextureOfMars = textureLoader.load('./mars.jpg')
 const normalTextureOfVenus = textureLoader.load('./venus.jpg')
+const normalTextureOfMars = textureLoader.load('./mars.jpg')
 const normalTextureOfNeptune = textureLoader.load('./neptune.jpg')
-const normalTextureOfUranus = textureLoader.load('./uranus.jpg')
 const normalTextureOfSaturnring = textureLoader.load('./saturnring.png')
+const normalTextureOfUranus = textureLoader.load('./uranus.jpg')
 
 const canvas = document.querySelector('canvas.webgl')
 
