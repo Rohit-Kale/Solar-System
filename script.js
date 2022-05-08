@@ -106,7 +106,7 @@ scene.add(sphereUranus)
 scene.add(sphereNeptune)
 
 const loader = new THREE.TextureLoader();
-scene.background = loader.load('./stars.jpg' , function(texture)
+scene.background = loader.load('./star.jpg' , function(texture)
             {
              scene.background = texture;  
             });
