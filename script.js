@@ -261,44 +261,44 @@ const tick = () =>
 
     const rotationMercury = Date.now() * 0.0009;
    
-    sphereMercury.position.x = 2.5 * Math.cos(rotationMercury)
-    sphereMercury.position.y = 1.5 * Math.sin(rotationMercury)
+    sphereMercury.position.x = 2 * Math.cos(rotationMercury)
+    sphereMercury.position.y = 1 * Math.sin(rotationMercury)
 
     const rotationVenus = Date.now() * 0.0008;
    
-    sphereVenus.position.x = 3.5 * Math.cos(rotationVenus)
-    sphereVenus.position.y = 2 * Math.sin(rotationVenus)
+    sphereVenus.position.x = 3 * Math.cos(rotationVenus)
+    sphereVenus.position.y = 1.5 * Math.sin(rotationVenus)
             
    
     const rotationEarth = Date.now() * 0.0007;
 
-    sphereEarth.position.x = 5 * Math.cos(rotationEarth)
-    sphereEarth.position.y = 2.5 * Math.sin(rotationEarth)
+    sphereEarth.position.x = 4.5 * Math.cos(rotationEarth)
+    sphereEarth.position.y = 2 * Math.sin(rotationEarth)
 
     const rotationMars = Date.now() * 0.0006;
     
-    sphereMars.position.x = 6 * Math.cos(rotationMars)
-    sphereMars.position.y = 3.6 * Math.sin(rotationMars)
+    sphereMars.position.x = 5.5 * Math.cos(rotationMars)
+    sphereMars.position.y = 3.1 * Math.sin(rotationMars)
 
     const rotationJupiter = Date.now() * 0.0005;
     
-    sphereJupiter.position.x = 7 * Math.cos(rotationJupiter)
-    sphereJupiter.position.y = 4.3 * Math.sin(rotationJupiter)
+    sphereJupiter.position.x = 6.5 * Math.cos(rotationJupiter)
+    sphereJupiter.position.y = 3.8 * Math.sin(rotationJupiter)
 
     const rotationSaturn = Date.now() * 0.0004;
    
-    sphereSaturn.position.x = 8 * Math.cos(rotationSaturn)
-    sphereSaturn.position.y = 5.5 * Math.sin(rotationSaturn)
+    sphereSaturn.position.x = 7.5 * Math.cos(rotationSaturn)
+    sphereSaturn.position.y = 5 * Math.sin(rotationSaturn)
 
     const rotationUranus = Date.now() * 0.0003;
   
-    sphereUranus.position.x = 9 * Math.cos(rotationUranus)
-    sphereUranus.position.y = 6 * Math.sin(rotationUranus)
+    sphereUranus.position.x = 8.5 * Math.cos(rotationUranus)
+    sphereUranus.position.y = 5.5 * Math.sin(rotationUranus)
 
     const rotationNeptune = Date.now() * 0.0002;
     
-    sphereNeptune.position.x = 9.7 * Math.cos(rotationNeptune)
-    sphereNeptune.position.y = 6.7 * Math.sin(rotationNeptune)
+    sphereNeptune.position.x = 9.2 * Math.cos(rotationNeptune)
+    sphereNeptune.position.y = 6.2 * Math.sin(rotationNeptune)
     
     // Update Orbital Controls
     // controls.update()
